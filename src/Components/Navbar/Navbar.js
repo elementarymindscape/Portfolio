@@ -4,7 +4,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import PersonIcon from '@material-ui/icons/Person';
 
-function Navbar() {
+function Navbar( { active, setActive } ) {
 
     function toLinkedIn(){
         window.open("https://www.linkedin.com/in/vivek-sharma-profile/")
@@ -20,8 +20,13 @@ function Navbar() {
                         <a href="/">
                         <PersonIcon className='img'/>
                         Portofolio
-                        </a >
+                        </a>
                     </div>
+                    <div className={'sidebar ' + (active && "active")} onClick={() => setActive(!active)} >
+                            <span className='line1'></span>
+                            <span className='line2'></span>
+                            <span className='line3'></span>
+                        </div>
                         <div className="Navigations">
                             <a href="#Home">About</a>
                             <a href="/">Skills</a>

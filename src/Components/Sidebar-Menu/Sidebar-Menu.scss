@@ -1,0 +1,59 @@
+@import '../../global.scss';
+
+.Menu{
+    width: 350px;
+    height: 100vh;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+
+    &.active{
+        right: 0;
+    }
+
+    .Navigation{
+        margin-top: auto;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+        }
+
+        li{
+            margin-bottom: 20px;
+        }
+        a{
+            letter-spacing: 2px;
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+            &:hover{
+                font-weight: 600;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .SocialMedia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+
+        .Icons{
+            cursor: pointer;
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+
+}

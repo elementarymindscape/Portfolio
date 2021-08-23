@@ -2,6 +2,7 @@ import React from 'react'
 import './Home.scss'
 import {init} from 'ityped';
 import { useEffect, useRef } from 'react';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 function Home() {
 
@@ -19,14 +20,11 @@ function Home() {
           <div className='left'>
                 <h3>Hi,</h3>
                 <h1>I am <span ref={dynamicText} ></span></h1>
-                <p>asjdbsajdbasldbasdasjdasasdasd
-                    asdhasdasdasd
-                    asdagsudygfasuydlsad
-                    asdyuasfvdykhasfcd
-                    adyuasfdasjdcasd'
-                    adasydfcaskdhacsvydtc
-                </p>
-
+                <p>I am pursuing my B.Tech from Bhagwan Parshuram Institute of Technology in Computer Sciene.
+                I am a Front-End Web Developer and working on my way to become a Full Stack Developer.
+                I have a keen interest in coding and learning various New Technologies to become better in the Development Industry.
+                 </p>
+                <button><InsertDriveFileIcon />View Resume</button>
             </div>
             <div className='right'>
                 <div className='ImgContainer'>
