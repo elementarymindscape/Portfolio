@@ -13,10 +13,12 @@
         flex: 1;
         overflow: hidden;
         .ImgContainer{
-            width: 700px;
+            width: 800px;
             height: 700px;
+            float: right;
+            overflow: hidden;
             img{
-                height: 90%;
+                height: 100%;
                 @include mobile{
                     width: 90%;
                     height: 35%;
@@ -31,78 +33,89 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
 
         h1{
-            color: aqua;
-            font-size: 40px;
+            font-size: 50px;
             text-decoration: underline;
-            overflow: hidden;
-        }
-
-        form{
-            width: 100%;
-            height: 80%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        input{
-            border-radius: 20px;
-            padding: 10px;
-            width: 300px;
-            height: 30px;
-            font-size: 18px;
+            color: aqua;
             @include mobile{
-                width: 200px;
+                font-size: 30px;
+            }   
+        }
+
+        .grid-container{
+
+            form{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                align-items: flex-end;
+            }
+
+            input{
+            border-radius: 10px;
+            padding: 5px;
+            height: 60px;
+            width: 300px;
+            font-size: 18px;
+            border: 0.1px solid black;
+            @include mobile{
+                width: 170px;
                 height: 30px;
                 border: 0.1px solid black;
                 border-radius: 0;
                 padding: 5px;
-                font-size: 12px;
-            }
+                font-size: 10px;
+            }   
+
+
             &:focus{
                 outline: none;
             }
-        }
-        textarea{
-            border-radius: 20px;
-            padding: 10px;
-            width: 300px;
-            height: 200px;
-            font-size: 18px;
-            &:focus{
-                outline: none;
             }
-            @include mobile{
-                width: 200px;
-                height: 100px;
+
+            textarea{
+                grid-column: 1 / -1;
+                border-radius: 10px;
                 padding: 5px;
-                border-radius: 5px;
+                height: 200px;
+                font-size: 18px;
+                border: 0.1px solid black;
+
+                @include mobile{
+                    height: 100px;
+                    border: 0.1px solid black;
+                    border-radius: 0;
+                    padding: 5px;
+                    font-size: 10px;
+                }   
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            button{
+                grid-column: 2 / -1;
+                border-radius: 10px;
+                padding: 5px;
+                height: 40px;
                 font-size: 12px;
+                border: none;
+                background-color: aqua;
+                @include mobile{
+                    height: 3   0px;
+                    border-radius: 5px;
+                    padding: 5px;
+                    font-size: 10px;
+                }   
+                &:focus{
+                    outline: none;
+                }
             }
         }
 
-        button{
-            width: 150px;
-            height: 30px;
-            font-size: 18px;
-            font-weight: 500;
-            border: none;
-            border-radius: 15px;
-            color: black;            
-            background-color: aqua;
-            &:focus{
-                outline: none;
-            }
-            @include mobile{
-                width: 75px;
-                height: 20px;
-                font-size: 12px;
-                border-radius: 5px;
-            }
-        }
     }
 }
