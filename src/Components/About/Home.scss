@@ -1,3 +1,75 @@
+@import '../../global.scss';
+
+
 .Home{
-    background-color: yellow;
+    background-color: white;
+     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        margin-left: 50px;
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include mobile{
+            margin-left: 30px;
+        }
+
+        h3{
+            font-size: 50px;
+            @include mobile{
+                font-size: 25px;
+            }
+        }
+        h1{
+            font-size: 60px;
+            @include mobile{
+                font-size: 35px;
+            }
+        }
+        p{
+            font-size: 14px;
+        }
+        span{
+            font-size: 60px;
+            color: aqua;
+            @include mobile{
+                font-size: 35px;
+            }
+        }
+    }
+    .right{
+        flex: 0.5;
+        overflow: hidden;
+        .ImgContainer{
+            width: 700px;
+            height: 700px;
+            background-color: aqua;
+            border-radius: 45% 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: right;
+            @include mobile{
+                height: 300px;
+                width: 500px;
+                border-radius: 50%;
+            }
+        }
+        img{
+            height: 90%;
+
+            @include mobile{
+                height: 100%;
+            }
+
+        }
+    }
+
 }
