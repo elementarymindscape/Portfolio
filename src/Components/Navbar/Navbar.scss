@@ -26,14 +26,14 @@
             &.active{
                span{
                 &:first-child{
-                    transform: rotate(35deg);
+                    transform: rotate(37deg);
                     background-color: black;
                 }
                 &:nth-child(2){
                     opacity: 0;
                 }
                 &:last-child{
-                    transform: rotate(-35deg);
+                    transform: rotate(-39deg);
                     background-color: black;
                 }
                }

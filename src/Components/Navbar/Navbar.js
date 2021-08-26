@@ -8,7 +8,7 @@ function Navbar( { active, setActive, theme, setTheme } ) {
     return (
         <div className="Navbar">
                     <div className='Logo'>
-                        <a href="/" className={`text${theme}`} >
+                        <a href="https://elementarymindscape.github.io/Portfolio/" className={`text${theme}`} >
                         Portofolio
                         </a>
                     </div>
