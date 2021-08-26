@@ -88,10 +88,11 @@
                             justify-content: center;
                             height: 350px;
                             @include mobile{
-                                height: 250px;
+                                height: 350px;
                             }
                             overflow: hidden;
                             img{
+                                height: 100%;
                                 width: 400px;
                             }
                         }
