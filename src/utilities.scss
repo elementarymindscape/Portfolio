@@ -1,0 +1,13 @@
+@import './global.scss';
+
+@each $color, $value in $themeColor{
+    .text#{$color}{
+        color: $value !important;  
+    }
+}
+
+@each $color, $value in $themeColor{
+    .#{$color}{
+        background-color: $value !important;  
+    }
+}

@@ -45,39 +45,38 @@
                 background-color: black;
                 transform-origin: left;
                 transition: transform 0.5s ease;
-            }
+            }              
         }
     }
 
     .Logo{
-        margin-left: auto;
-        width: 40%;
         display: flex;
         align-items: center;
-
+        justify-content: center;
+        width: 25%;
+        display: flex;
+        align-items: center;
         @include mobile{
-            margin-left: 20px;
+            margin-left: 30px;
+            display: block;
             width: 100%;
         } 
-        .img{
-            font-size: 60px;
-            font-weight: 700;
-            color: black;
-            @include mobile{
-                font-size: 30px;
-            }
-        }
 
         a{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 35px;
-            font-weight: 700;
+            font-weight: 600;
+            letter-spacing: 2px;
             color: black;
             text-decoration: none;
+            &:hover{
+                &:hover{
+                    font-size: 45px;
+                    font-weight: 800;
+                    letter-spacing: 4px;
+                }
+            }
             @include mobile{
-                font-size: 25px;
+                font-size: 30px;
             }
         }
     }
@@ -87,28 +86,75 @@
            width: 40%;
            display: flex;
            align-items: center;
-           justify-content: space-around;
+           justify-content: space-evenly;
            @include mobile{
             display: none;
         }
            a{
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 600;
             color: black;
             text-decoration: none;
             font-size: 20px;
 
             &:hover{
-                color: aqua;
+                font-size: 25px;
+                font-weight: 800;
+                letter-spacing: 3px;
             }
+        }
+       }
 
+       
+       .themebuttons{
+        @include mobile{
+            display: none;
+        }
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 25%;
+                button{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &:hover{
+                    width: 30px;
+                    height: 30px;
+                }
+                &:focus{
+                    border: 3px solid black;
+                    width: 30px;
+                    height: 30px;
+                }
+                }
+            .thm1{
+                margin-right: 12px;
+                background: yellow;
+            }
+            .thm2{
+                margin-right: 12px;
+                background: aqua;
+            }
+            .thm3{
+                margin-right: 12px;
+                background: #973BF4;
+            }
+            .thm4{
+                margin-right: 12px;
+                background: #F22B2B;
+            }
+            .thm5{
+                background: #4BF22B;
+            }
         }
 
 
-       }
-
         .Social-Media{
-            width: 10%;
+            width: 15%;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -119,11 +165,6 @@
         }  
         .Icons{
             font-size: 30px;
-            color: black;
             cursor: pointer;
-
-            &:hover{
-                background-color: aqua;
-            }
         } 
 }

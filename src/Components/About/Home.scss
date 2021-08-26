@@ -1,8 +1,9 @@
 @import '../../global.scss';
+@import '../../utilities.scss';
 
 
 .Home{
-    background-color: white;
+    background-color: $mainColor;
      display: flex;
 
     @include mobile{
@@ -50,16 +51,21 @@
             font-size: 14px;
             cursor: pointer;
             letter-spacing: 3px;
-            border: 2px solid aqua;
             transition: all 2s ease;
             &:hover{
-                background-color: aqua;
                 border: 2px solid black;
+            }
+            @include mobile{
+                height: 50px;
+                width: 120px;
+                border-radius: 15px;
+                padding: 2px;
+                font-size: 10px;
+                margin-left: auto;
             }
         }
         span{
             font-size: 60px;
-            color: aqua;
             @include mobile{
                 font-size: 35px;
             }
@@ -71,7 +77,6 @@
         .ImgContainer{
             width: 700px;
             height: 700px;
-            background-color: aqua;
             border-radius: 45% 60%;
             display: flex;
             align-items: center;

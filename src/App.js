@@ -9,15 +9,16 @@ import SidebarMenu from './Components/Sidebar-Menu/Sidebar-Menu';
 function App() {
 
   const [active, setActive] = useState(false);
+  const [theme, setTheme] = useState('theme1');
 
   return (
     <div className="App">
-      <Navbar active={active} setActive={setActive} />
-      <SidebarMenu active={active} setActive={setActive}/>
+      <Navbar theme={theme} setTheme={setTheme} active={active} setActive={setActive} />
+      <SidebarMenu theme={theme} setTheme={setTheme} active={active} setActive={setActive}/>
       <div className="Sections">
-      <Home />
-      <Projects />
-      <Contact />
+      <Home theme={theme} setTheme={setTheme}/>
+      <Projects theme={theme} setTheme={setTheme}/>
+      <Contact theme={theme} setTheme={setTheme}  />
       </div>
     </div>
   );

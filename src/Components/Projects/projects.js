@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './projects.scss'
 import ProjectData from '../ProjectsData'
 
-function Projects() {
+function Projects({theme}) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -14,7 +14,7 @@ function Projects() {
 
     return (
         <div className="Projects"id="Projects">
-            <div className='slider' style={{ transform: `translateX(-${currentSlide * 100}vw)` }} >
+              <div className='slider' style={{ transform: `translateX(-${currentSlide * 100}vw)` }} >
                {
                    ProjectData.map((Project, key) => (
                     <div className='container' key={key} >
@@ -26,7 +26,7 @@ function Projects() {
                                  </div>
                              </div>
                          </div>
-                         <div className="right">
+                         <div className={`right ${theme}`}>
                              <h1>{Project.title}</h1>
                              <p>{Project.Description}</p>
                              <button onClick={() => window.open(`${Project.url}`) } >Code</button>

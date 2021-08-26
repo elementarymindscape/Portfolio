@@ -1,6 +1,7 @@
 @import '../../global.scss';
 
 .Menu{
+
     width: 350px;
     height: 100vh;
     background-color: $mainColor;
@@ -13,6 +14,10 @@
     justify-content: center;
     align-items: center;
     transition: all 1s ease;
+    
+    @media (min-width: 769px){
+        display: none;
+    }
 
     &.active{
         right: 0;
@@ -22,10 +27,14 @@
         margin-top: auto;
 
         ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             margin: 0;
-            padding: 0;
             list-style: none;
             width: 100%;
+            height: 300px;
         }
 
         li{
@@ -37,11 +46,50 @@
             font-size: 24px;
             color: black;
             &:hover{
+                font-size: 30px;
                 font-weight: 600;
                 text-decoration: underline;
             }
         }
     }
+
+    .themebuttons{
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+                button{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &:focus{
+                    border: 3px solid black;
+                    width: 50px;
+                    height: 50px;
+                }
+                }
+            .thm1{
+                margin-right: 12px;
+                background: yellow;
+            }
+            .thm2{
+                margin-right: 12px;
+                background: aqua;
+            }
+            .thm3{
+                margin-right: 12px;
+                background: #FE71AD;
+            }
+            .thm4{
+                margin-right: 12px;
+                background: #F22B2B;
+            }
+            .thm5{
+                background: #4BF22B;
+            }
+        }
 
     .SocialMedia{
         display: flex;
@@ -52,7 +100,7 @@
         .Icons{
             cursor: pointer;
             font-size: 30px;
-            margin: 10px;
+            margin: 10px;   
         }
     }
 
