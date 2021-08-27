@@ -5,7 +5,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/dbms-project",
         img: "assets/pizza.jpg",
         alt: "pizza",
-        Description: "A Full Stack Website made using React(Frontend) and NodeJS+Express+MySQL(Backend) with User Authentication using JWT, Online Ordering and Payment functionality and Redux for State Management."
+        Description: "A Full Stack Website made using React(Frontend) and NodeJS+Express+MySQL(Backend) with User Authentication using JWT, Online Ordering and Payment functionality and Redux for State Management. (Note: This Project is Work Under Progress, so View Live is not available.)"
     },
     {
         id: 2,
@@ -13,6 +13,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/tic-tac-toe",
         img: "assets/tictactoe.jpg",
         alt: "tic-tac-toe",
+        liveCode: "http://tictactoe-vivek.surge.sh/",
         Description: "The Tic-Tac-Toe game recreated in ReactJS using React Hooks."
     },
     {
@@ -21,6 +22,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/todo-list",
         img: "assets/todo.jpg",
         alt: "todo",
+        liveCode: "http://todolist-vivek.surge.sh/",
         Description: "A Simple To-Do List made using HTML, CSS, Bootstrap and Javascript."
     },
     {
@@ -29,6 +31,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/piano-js",
         img: "assets/piano.jpg",
         alt: "piano",
+        liveCode: "http://virtual-piano.surge.sh/",
         Description: "A Virtual Piano made using HTML, CSS, Javascript with On-Keyboard Press Sound."
     },
     {
@@ -37,6 +40,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/Portfolio",
         img: "assets/portfolio.jpg",
         alt: "portfolio",
+        liveCode: "https://elementarymindscape.github.io/Portfolio/",
         Description: "A Portfolio Website made to showcase my Projects and Works, made using ReactJS and MaterialUI Icons  "
     }
 ]

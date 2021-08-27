@@ -91,6 +91,9 @@ function Contact({theme}) {
                     </div>
                 </div>
             </div>
+            <div className="footer" >
+                <h2>Designed By <span className={`text${theme}`}>Vivek.</span></h2>
+            </div>
         </div>
     )
 }

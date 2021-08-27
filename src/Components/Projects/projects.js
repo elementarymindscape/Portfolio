@@ -29,7 +29,10 @@ function Projects({theme}) {
                          <div className={`right ${theme}`}>
                              <h1>{Project.title}</h1>
                              <p>{Project.Description}</p>
+                             <div className="buttons">
                              <button onClick={() => window.open(`${Project.url}`) } >Code</button>
+                             { Project.liveCode ? <button onClick={() => window.open(`${Project.liveCode}`) } >View Live</button> : ""}
+                         </div>
                          </div>
                     </div>
                 </div>
@@ -42,4 +45,4 @@ function Projects({theme}) {
     )
 }
 
-export default Projects
+export default Projects;

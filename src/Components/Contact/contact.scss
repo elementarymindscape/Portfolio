@@ -4,7 +4,8 @@
     display: flex;
     background-color: $mainColor;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 
     .wrapper{
         height: 70vh;
@@ -86,7 +87,7 @@
                         }
                 }
                 form{
-                    width: 80%;
+                    width: 85%;
                     display: flex;
                     flex-wrap: wrap;
                     display: flex;
@@ -145,12 +146,18 @@
                         border-radius: 20px;
                         cursor: pointer;
                         @include mobile{
-                            height: 20px;
+                            height: 30px;
                         }
                     }
                 }
             }
         }
+        }
+    }
+
+    .footer{
+        @include mobile{
+            margin: auto;
         }
     }
 
