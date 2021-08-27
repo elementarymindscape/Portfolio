@@ -13,7 +13,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/tic-tac-toe",
         img: "assets/tictactoe.jpg",
         alt: "tic-tac-toe",
-        liveCode: "http://tictactoe-vivek.surge.sh/",
+        liveCode: "https://tic-tac-toe-new.vercel.app/",
         Description: "The Tic-Tac-Toe game recreated in ReactJS using React Hooks."
     },
     {
@@ -31,7 +31,7 @@ const ProjectData = [
         url: "https://github.com/elementarymindscape/piano-js",
         img: "assets/piano.jpg",
         alt: "piano",
-        liveCode: "http://virtual-piano.surge.sh/",
+        liveCode: "http://virtualpiano-vivek.surge.sh/",
         Description: "A Virtual Piano made using HTML, CSS, Javascript with On-Keyboard Press Sound."
     },
     {

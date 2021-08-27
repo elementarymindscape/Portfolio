@@ -24,7 +24,7 @@ function Home({ theme, setTheme }) {
                 I am a Front-End Web Developer and working on my way to become a Full Stack Developer.
                 I have a keen interest in coding and learning various new technologies to become better in the field of work I Love =) .
                  </p>
-                <button onClick={()=> window.open("https://drive.google.com/file/d/1iLrJEgjJN0blYwuZpLl9Ss3yxjIdiuXJ/view?usp=sharing") } ><InsertDriveFileIcon />View Resume</button>
+                <button className={`boxshadow${theme}`} onClick={()=> window.open("https://drive.google.com/file/d/1iLrJEgjJN0blYwuZpLl9Ss3yxjIdiuXJ/view?usp=sharing") } ><InsertDriveFileIcon />View Resume</button>
             </div>
             <div className='right'>
                 <div className={`ImgContainer ${theme}`}>
